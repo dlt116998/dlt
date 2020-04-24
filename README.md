@@ -2,12 +2,12 @@
 
 ## Project setup
 ```
-npm install
+npm install 可以安装项目依赖（package.json）
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run serve 启动项目
 ```
 
 ### Compiles and minifies for production

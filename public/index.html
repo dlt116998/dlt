@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+	
+	<!-- <script src="../src/main.js" type="text/javascript" charset="utf-8"></script> -->
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+	<!-- 注意  会被替换 -->
+    <div id="app" title="会被替换">  <p>会被替换掉</p>  </div>
+	<!-- 这个是默认的主html页面    他的#app 内部内容会被替换 -->
     <!-- built files will be auto injected -->
   </body>
 </html>
