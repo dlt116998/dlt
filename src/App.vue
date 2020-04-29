@@ -8,20 +8,26 @@
 
 
 <template>
-  <div id="app">
+  <div id="add">
     <div id="nav">
-		{{info}}
+
+
+	
+
+
 		
-		<!-- router-link 相当于 html的 a标签 超级链接-->
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-	  <router-link to="/download">下载</router-link> |
-	   <router-link to="/document">文档</router-link>|
-	    <router-link to="/guanyu">关于我们</router-link>
+		<!-- router-link 相当于 html的 a标签 超级链接 -->
+      <router-link to="/"><div><img src="./../public/1575774328.gif" alt="" >商城首页</div></router-link> 
+      <router-link to="/classification">  <div><img src="./../public/1575774365.gif" alt="">分类</div></router-link> 
+	
+	   <router-link to="/document"><div><img src="./../public/1575774149.gif" alt="">购物车</div></router-link>
+	    <router-link to="/min"><div><img src="./../public/1575774232.gif" alt="">个人</div></router-link>
     </div>
 	
 	<!-- router-view 用于显示当前路由匹配的内容 -->
-    <router-view/>
+  <router-view>
+	  
+  </router-view>
   </div>
 </template>
 
@@ -39,18 +45,31 @@
 
 
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#add {
+  
   text-align: center;
   color: #2c3e50;
 }
 
 #nav {
-  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+width: 100%;
+  position: fixed;
+background-color: #fff;
 
+bottom: 0px;
+img{
+	width: 50px;
+	height: 50px;
+}
+div{
+	display: flex;
+	flex-direction: column;
+
+}
   a {
+	    text-decoration: none;
     font-weight: bold;
     color: #2c3e50;
 

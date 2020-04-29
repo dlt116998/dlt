@@ -9,6 +9,24 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
+// 注册Vant
+import Vant from 'vant';
+import 'vant/lib/index.css';
+Vue.use(Vant);
+
+Vue.prototype.$bus = new Vue();
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+
+Vue.use(ElementUI);
+
+
+
+import Cookies from 'js-cookie'
+
+// 将js-cookie注册原型
+Vue.prototype.$jsCookie = Cookies
 
 // 所有VUE工作都有Vue主实例开始
 // 注册该vue实例使用的路由管理类  与 数据存储类
